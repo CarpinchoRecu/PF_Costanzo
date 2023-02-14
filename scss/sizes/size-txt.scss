@@ -1,0 +1,32 @@
+/*diferentes sizes*/
+
+$txt-general: 20px;
+$txt-title: 140px;
+$txt-subtitle: 42px;
+$txt-general2: 25px;
+$txt-sale: 40px;
+$txt-title-sale: 60px;
+
+.txt-general{
+    font-size: $txt-general;
+}
+
+.txt-title{
+    font-size: $txt-title;
+}
+
+.txt-subtitle{
+    font-size: $txt-subtitle;
+}
+
+.txt-general2{
+    font-size: $txt-general2;
+}
+
+.txt-sale{
+    font-size: $txt-sale;
+}
+
+.txt-title-sale{
+    font-size: $txt-title-sale;
+}

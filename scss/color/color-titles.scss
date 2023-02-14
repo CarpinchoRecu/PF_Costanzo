@@ -1,0 +1,28 @@
+/*Gameta de colores de txt*/
+
+$txt: rgb(255, 255, 255);
+$sale-txt: rgb(0, 0, 0);
+$green: rgb(111, 111, 111);
+
+
+.color-txt {
+    color: $txt;
+}
+
+.color-sale-txt{
+    color: $sale-txt;
+}
+
+strong {
+    text-shadow: 1px 1px 6px rgb(255, 255, 255);
+}
+
+/*Gameta de backgrounds*/
+
+$sale: rgb(255, 255, 255);
+$blue: rgb(111, 111, 111);
+$green: rgb(111, 111, 111);
+
+.backgroundcolor-sale {
+    background-color: $sale;
+}

@@ -1,0 +1,74 @@
+@media screen and (max-width: 480px) {
+    #grid-general {
+        grid-template-columns: 100%;
+    }
+
+    .size-logo {
+        height: 90px;
+        width: 90px;
+    }
+
+    .txt-title {
+        font-size: 80px;
+    }
+
+    .font-title {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    }
+
+    .txt-subtitle {
+        font-size: 20px;
+    }
+
+    .txt-general {
+        font-size: 17px;
+    }
+
+    .txt-general2 {
+        font-size: 21px;
+    }
+
+    .position-logo {
+        top: 1.7rem;
+        left: 0.5rem;
+    }
+
+    .position-title {
+        right: 1rem;
+        top: 0;
+    }
+
+    .position-subtitle {
+        position: relative;
+        right: 0;
+        bottom: 1rem;
+    }
+
+    .size-carousel {
+        width: 95% !important;
+        height: 95% !important;
+    }
+
+    .container-main {
+        height: 100%;
+        width: 100%;
+
+        .box-animated {
+            &:hover .box-img {
+                transform: translate(-1.3rem, -1.3rem);
+            }
+
+            &:hover .box-txt {
+                transform: translate(-1.8rem, -2.8rem);
+            }
+        }
+    }
+
+    .flex-wrap{
+        gap: 13px;
+    }
+
+    .txt-title-sale{
+        font-size: 35px;
+    }
+}
