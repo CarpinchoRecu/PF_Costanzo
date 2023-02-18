@@ -44,7 +44,7 @@
 
     $size-txt-1: 20px;
     $size-txt-2: 20px;
-    $size-txt-3: 30px;
+    $size-txt-3: 25px;
     $size-txt-4: 30px;
     $size-txt-5: 70px;
     $size-txt-6: 20px;
@@ -99,7 +99,7 @@
 
         .position-title {
             position: absolute;
-            top: 0.4rem;
+            top: 0;
             left: 7rem;
         }
 
@@ -117,7 +117,7 @@
 
         .position-p {
             position: absolute;
-            top: 8rem;
+            top: 10rem;
             left: 0.5rem;
         }
     }

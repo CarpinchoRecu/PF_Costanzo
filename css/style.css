@@ -419,7 +419,7 @@ strong {
   .size-txt-2 {
     font-size: 20px; }
   .size-txt-3 {
-    font-size: 30px; }
+    font-size: 25px; }
   .size-txt-4 {
     font-size: 30px; }
   .size-txt-5 {
@@ -439,7 +439,7 @@ strong {
     position: relative; }
     .position-main .position-title {
       position: absolute;
-      top: 0.4rem;
+      top: 0;
       left: 7rem; }
     .position-main .position-subtitle {
       position: absolute;
@@ -451,7 +451,7 @@ strong {
       left: 1rem; }
     .position-main .position-p {
       position: absolute;
-      top: 8rem;
+      top: 10rem;
       left: 0.5rem; }
   /*animacion del index*/
   .container-main {
