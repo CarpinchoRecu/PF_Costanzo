@@ -1,4 +1,4 @@
-/*Animacion de index*/
+/*Animacion de todas las pages*/
 
 @keyframes index {
     from {
@@ -10,25 +10,8 @@
     }
 }
 
-/*Animacion de todas las pages*/
-
-@keyframes pages {
-    from {
-        transform: translateY(-15%);
-    }
-
-    to {
-        transform: translateY(0);
-    }
-}
-
 .animation-index {
     animation: index 1s ease-in-out;
     opacity: 1;
     background-color: rgb(29, 29, 29);
-}
-
-.animation-pages {
-    animation: pages 1s ease-in-out;
-    transform: translateY(0);
 }

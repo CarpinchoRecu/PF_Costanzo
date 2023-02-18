@@ -1,53 +1,128 @@
 @media screen and (max-width: 480px) {
+
+    /*Grids mobile*/
+
     #grid-general {
         grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
     }
+
+    #grid-main {
+        grid-template-columns: 100%;
+        grid-template-rows: 17rem auto;
+    }
+
+    #grid-main-contactanos {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+    }
+
+    #grid-main-sobrenosotros {
+        grid-template-areas: "title" "lorem";
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+
+        .title-grid {
+            grid-area: title;
+            background-color: rgb(97, 97, 97);
+        }
+    }
+
+    /*sizes objetos*/
 
     .size-logo {
         height: 90px;
         width: 90px;
     }
 
-    .txt-title {
-        font-size: 80px;
+    .size-wp {
+        height: 150px;
+        width: 150px;
     }
 
-    .font-title {
-        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    /*sizes textos*/
+
+    $size-txt-1: 20px;
+    $size-txt-2: 20px;
+    $size-txt-3: 30px;
+    $size-txt-4: 30px;
+    $size-txt-5: 70px;
+    $size-txt-6: 20px;
+
+    .size-txt-1 {
+        font-size: $size-txt-1;
     }
 
-    .txt-subtitle {
-        font-size: 20px;
+    .size-txt-2 {
+        font-size: $size-txt-2;
     }
 
-    .txt-general {
-        font-size: 17px;
+    .size-txt-3 {
+        font-size: $size-txt-3;
     }
 
-    .txt-general2 {
-        font-size: 21px;
+    .size-txt-4 {
+        font-size: $size-txt-4;
     }
 
-    .position-logo {
-        top: 1.7rem;
-        left: 0.5rem;
+    .size-txt-5 {
+        font-size: $size-txt-5;
     }
 
-    .position-title {
-        right: 1rem;
-        top: 0;
+    .size-txt-6 {
+        font-size: $size-txt-6;
     }
 
-    .position-subtitle {
+    /*card ventas size*/
+
+    .card-sale {
+        width: 170px;
+        height: 170px;
+    }
+
+    .card-price {
+        img {
+            width: 90px;
+        }
+    }
+
+    .card-img {
+        img {
+            width: 150px;
+        }
+    }
+
+    /*Pocisiones*/
+
+    .position-main {
         position: relative;
-        right: 0;
-        bottom: 1rem;
+
+        .position-title {
+            position: absolute;
+            top: 0.4rem;
+            left: 7rem;
+        }
+
+        .position-subtitle {
+            position: absolute;
+            top: 4.4rem;
+            left: 7rem;
+        }
+
+        .position-logo {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+        }
+
+        .position-p {
+            position: absolute;
+            top: 8rem;
+            left: 0.5rem;
+        }
     }
 
-    .size-carousel {
-        width: 95% !important;
-        height: 95% !important;
-    }
+    /*animacion del index*/
 
     .container-main {
         height: 100%;
@@ -62,13 +137,5 @@
                 transform: translate(-1.8rem, -2.8rem);
             }
         }
-    }
-
-    .flex-wrap{
-        gap: 13px;
-    }
-
-    .txt-title-sale{
-        font-size: 35px;
     }
 }

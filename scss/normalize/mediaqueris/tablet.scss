@@ -1,52 +1,147 @@
 @media screen and (max-width: 720px) {
-    .flex-row {
-        flex-wrap: wrap;
+
+    /*Grids mobile*/
+
+    #grid-general {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
     }
+
+    #grid-main {
+        grid-template-columns: 100%;
+        grid-template-rows: 17rem auto;
+    }
+
+    #grid-main-contactanos {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+    }
+
+    #grid-main-sobrenosotros {
+        grid-template-areas: "title" "lorem";
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+
+        .title-grid {
+            grid-area: title;
+            background-color: rgb(97, 97, 97);
+        }
+    }
+
+    /*sizes objetos*/
 
     .size-logo {
-        height: 120px;
-        width: 120px;
+        height: 130px;
+        width: 130px;
     }
 
-    .size-carousel {
-        width: 80% !important;
-        height: 80% !important;
+    .size-wp {
+        height: 150px;
+        width: 150px;
     }
 
-    .position-logo {
-        top: 2rem;
-        left: 2rem;
+    /*sizes textos*/
+
+    $size-txt-1: 20px;
+    $size-txt-2: 20px;
+    $size-txt-3: 30px;
+    $size-txt-4: 50px;
+    $size-txt-5: 110px;
+    $size-txt-6: 20px;
+
+    .size-txt-1 {
+        font-size: $size-txt-1;
     }
 
-    .txt-title {
-        font-size: 110px;
+    .size-txt-2 {
+        font-size: $size-txt-2;
     }
 
-    .txt-subtitle {
-        font-size: 32px;
+    .size-txt-3 {
+        font-size: $size-txt-3;
     }
 
-    .txt-general {
-        font-size: 25px;
+    .size-txt-4 {
+        font-size: $size-txt-4;
     }
 
-    .txt-general2 {
-        font-size: 30px;
+    .size-txt-5 {
+        font-size: $size-txt-5;
     }
 
-    .position-title {
+    .size-txt-6 {
+        font-size: $size-txt-6;
+    }
+
+    /*card ventas size*/
+
+    .card-sale {
+        width: 230px;
+        height: 230px;
+    }
+
+    .card-price {
+        img {
+            width: 120px;
+        }
+    }
+
+    .card-img {
+        img {
+            width: 200px;
+        }
+    }
+
+    /*Pocisiones*/
+
+    .position-main {
         position: relative;
-        right: 3.5rem;
-        top: 0.5rem;
+
+        .position-title {
+            position: absolute;
+            top: 1rem;
+            left: 12rem;
+        }
+
+        .position-subtitle {
+            position: absolute;
+            top: 7rem;
+            left: 16rem;
+        }
+
+        .position-logo {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+        }
+
+        .position-p {
+            position: absolute;
+            top: 11rem;
+            left: 0.5rem;
+        }
     }
 
-    .position-subtitle {
-        position: relative;
-        right: 0.8rem;
-        bottom: 1.7rem;
+    /*animacion del index*/
+
+    .container-main {
+        height: 100%;
+        width: 100%;
+
+        .box-animated {
+            &:hover .box-img {
+                transform: translate(-1.3rem, -1.3rem);
+            }
+
+            &:hover .box-txt {
+                transform: translate(-1.8rem, -2.8rem);
+            }
+        }
     }
 
-    .flex-wrap{
-        gap: 17px;
+    /*modificacion del flex-row*/
+
+    .flex-row {
+        flex-wrap: wrap;
     }
 }

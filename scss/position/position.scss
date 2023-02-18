@@ -1,17 +1,27 @@
-.position-logo{
+.position-main {
     position: relative;
-    top: 2.5rem;
-    left: 3rem;
-}
 
-.position-title{
-    position: relative;
-    right: 3.5rem;
-    top: 0.5rem;
-}
+    .position-title {
+        position: absolute;
+        top: 3rem;
+        left: 10rem;
+    }
 
-.position-subtitle{
-    position: relative;
-    right: 0.8rem;
-    bottom: 1.7rem;
+    .position-subtitle {
+        position: absolute;
+        top: 11.5rem;
+        left: 17rem;
+    }
+
+    .position-logo {
+        position: absolute;
+        top: 3rem;
+        left: 90rem;
+    }
+
+    .position-p {
+        position: absolute;
+        top: 20rem;
+        left: 6rem;
+    }
 }

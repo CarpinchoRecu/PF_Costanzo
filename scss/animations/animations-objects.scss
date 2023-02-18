@@ -102,7 +102,7 @@
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    border-radius: 16px;
+    border-radius: 15px;
 }
 
 .card-img {
@@ -131,5 +131,30 @@
 
     h3 {
         margin: 0;
+    }
+}
+
+/*Animacion logo*/
+
+@keyframes logo {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animation-logo {
+    position: relative;
+
+    &:hover {
+        animation: logo 0.4s ease;
+        transform: scale(1);
     }
 }

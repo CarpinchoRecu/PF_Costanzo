@@ -1,32 +1,33 @@
 /*diferentes sizes*/
 
-$txt-general: 20px;
-$txt-title: 140px;
-$txt-subtitle: 42px;
-$txt-general2: 25px;
-$txt-sale: 40px;
-$txt-title-sale: 60px;
+$size-txt-1: 20px;
+$size-txt-2: 30px;
+$size-txt-3: 40px;
+$size-txt-4: 55px;
+$size-txt-5: 150px;
+$size-txt-6: 25px;
 
-.txt-general{
-    font-size: $txt-general;
+
+.size-txt-1 {
+    font-size: $size-txt-1;
 }
 
-.txt-title{
-    font-size: $txt-title;
+.size-txt-2 {
+    font-size: $size-txt-2;
 }
 
-.txt-subtitle{
-    font-size: $txt-subtitle;
+.size-txt-3 {
+    font-size: $size-txt-3;
 }
 
-.txt-general2{
-    font-size: $txt-general2;
+.size-txt-4 {
+    font-size: $size-txt-4;
 }
 
-.txt-sale{
-    font-size: $txt-sale;
+.size-txt-5 {
+    font-size: $size-txt-5;
 }
 
-.txt-title-sale{
-    font-size: $txt-title-sale;
+.size-txt-6 {
+    font-size: $size-txt-6;
 }
