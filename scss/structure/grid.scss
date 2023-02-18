@@ -1,3 +1,5 @@
+/*grid principal*/
+
 #grid-general {
     display: grid;
     grid-template-areas: "header" "main" "footer";
@@ -17,6 +19,8 @@
     }
 }
 
+/*grid del contenido*/
+
 #grid-main {
     display: grid;
     grid-template-areas: "main1" "main2";
@@ -34,6 +38,8 @@
 
 }
 
+/*grid del contenido contactanos*/
+
 #grid-main-contactanos {
     display: grid;
     grid-template-areas: "main1" "main2";
@@ -50,6 +56,8 @@
     }
 
 }
+
+/*grid del contenido sobre nosotros*/
 
 #grid-main-sobrenosotros {
     display: grid;
