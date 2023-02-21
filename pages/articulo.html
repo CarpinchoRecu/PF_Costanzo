@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="cortes, peluqueria, pelo, jazba, unisex, colores, color, colorimetria">
+    <meta name="description" content="Peluqueria unisex. Hacemos cortes, diseños y nos especializamos en colores">
+    <title>JAZBA | Ventas</title>
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!--Icon-Page-->
+    <link rel="icon" type="image/png" href="../images/logo-page.jpg" />
+
+    <!--Retraso de los botones que redefinen a otras paginas-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            const enlaces = document.querySelectorAll('.delay');
+            enlaces.forEach(enlace => {
+                enlace.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    const url = this.getAttribute('data-url');
+                    const delay = this.getAttribute('data-delay') * 1000;
+                    const target = this.getAttribute('target');
+                    setTimeout(function () {
+                        if (target === '_blank') {
+                            window.open(url, target);
+                        } else {
+                            window.location.href = url;
+                        }
+                    }, delay);
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="grid-general">
+        <header>
+            <div class="header-grid border-color border-container-bottom">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand size-txt-1 color-txt" href="../index.html">Inicio</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-link size-txt-1 color-txt"
+                                    href="../pages/contactanos.html">Contactanos</a>
+                                <a class="nav-link size-txt-1 color-txt" href="../pages/ventas.html">Articulos en
+                                    Venta</a>
+                                <a class="nav-link size-txt-1 color-txt" href="../pages/sobrenosotros.html">Sobre
+                                    Nosotros</a>
+                                <a class="nav-link size-txt-1 color-txt" href="../pages/turnos.html">Turnos</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </header>
+        <div class="animation-index">
+            <main class="main-grid border-color border-container-bottom">
+                <section id="grid-main">
+                  <article class="main1-grid border-color border-container-bottom">
+                    <div class="flex-column flex-center">
+                      <h2 class="font-general color-txt size-txt-4">Modalidad de Compra:</h2>
+                      <li class="font-general color-txt size-txt-2">Mandanos directamente por Whatsapp o nuestras Redes</li>
+                      <li class="font-general color-txt size-txt-2">Preguntanos por Stock y Precio</li>
+                      <li class="font-general color-txt size-txt-2">Pasa a buscarlo por la pelu o arregla la forma de obtener tu producto</li>
+                      <a class="font-general color-txt size-txt-2" href="../pages/ventas.html">Volver</a>
+                    </div>
+                  </article>
+                  <br>
+                  <article class="main2-grid">
+                    <div class="flex-center flex-column">
+                      <h2 class="font-general color-txt size-txt-4">Mandanos a Whatsapp:</h2>
+                      <h2 class="font-general color-txt size-txt-2">+54 2346 550818</h2>
+                    </div>
+                    <div class="flex-center flex-column">
+                      <h2 class="font-general color-txt size-txt-4">O Toca aca:</h2>
+                      <br />
+                      <div>
+                        <a href="https://api.whatsapp.com/send?phone=5492346550818" target="_blank" rel="noopener noreferrer" data-url="https://api.whatsapp.com/send?phone=5492346550818" data-delay="0.5"
+                        class="delay">
+                          <div class="animation-networks">
+                            <img class="size-wp" src="../images/logo-whatsapp.jpg" alt="logo-whatsapp" />
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                </section>
+              </main>
+
+            <footer class="footer-grid">
+                <div class="flex-center flex-column">
+                    <h2 class="font-general color-txt size-txt-1">
+                        ALL RIGHTS RESERVED © 2023
+                    </h2>
+                    <h2 class="font-general color-txt size-txt-1">JAZBA PELUQUERIA</h2>
+                </div>
+                <br />
+                <div class="flex-center flex-row">
+                    <a href="https://www.facebook.com/people/Jazba-Peluqueria/100063650915111/" target="_blank"
+                        rel="noopener noreferrer"
+                        data-url="https://www.facebook.com/people/Jazba-Peluqueria/100063650915111/" data-delay="0.5"
+                        class="delay">
+                        <div>
+                            <img class="size-fc animation-networks" src="../images/logo-facebook.jpg"
+                                alt="logo-facebook" />
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/jazba.peluqueria/" target="_blank" rel="noopener noreferrer"
+                        data-url="https://www.instagram.com/jazba.peluqueria/" data-delay="0.5" class="delay">
+                        <div>
+                            <img class="size-ig animation-networks" src="../images/logo-instagram.jpg"
+                                alt="logo-instagram" />
+                        </div>
+                    </a>
+                    <a href="https://www.tiktok.com/@jazbapeluqueria" target="_blank" rel="noopener noreferrer"
+                        data-url="https://www.tiktok.com/@jazbapeluqueria" data-delay="0.5" class="delay">
+                        <div>
+                            <img class="size-tk animation-networks" src="../images/logo-tiktok.jpg" alt="logo-tiktok" />
+                        </div>
+                    </a>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+</body>
+
+</html>

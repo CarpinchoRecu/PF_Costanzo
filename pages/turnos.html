@@ -18,6 +18,28 @@
 
   <!--Icon-Page-->
   <link rel="icon" type="image/png" href="../images/logo-page.jpg" />
+
+    <!--Retraso de los botones que redefinen a otras paginas-->
+    <script>
+      document.addEventListener("DOMContentLoaded", function (event) {
+        const enlaces = document.querySelectorAll('.delay');
+        enlaces.forEach(enlace => {
+          enlace.addEventListener('click', function (event) {
+            event.preventDefault();
+            const url = this.getAttribute('data-url');
+            const delay = this.getAttribute('data-delay') * 1000;
+            const target = this.getAttribute('target');
+            setTimeout(function () {
+              if (target === '_blank') {
+                window.open(url, target);
+              } else {
+                window.location.href = url;
+              }
+            }, delay);
+          });
+        });
+      });
+    </script>
 </head>
 
 <body>
@@ -65,7 +87,8 @@
               <h2 class="font-general color-txt size-txt-4">O Toca aca:</h2>
               <br />
               <div>
-                <a href="https://api.whatsapp.com/send?phone=5492346550818" target="_blank" rel="noopener noreferrer">
+                <a href="https://api.whatsapp.com/send?phone=5492346550818" target="_blank" rel="noopener noreferrer" data-url="https://api.whatsapp.com/send?phone=5492346550818" data-delay="0.5"
+                class="delay">
                   <div class="animation-networks">
                     <img class="size-wp" src="../images/logo-whatsapp.jpg" alt="logo-whatsapp" />
                   </div>
@@ -85,18 +108,20 @@
         <br />
         <div class="flex-center flex-row">
           <a href="https://www.facebook.com/people/Jazba-Peluqueria/100063650915111/" target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer" data-url="https://www.facebook.com/people/Jazba-Peluqueria/100063650915111/"
+            data-delay="0.5" class="delay">
             <div>
-              <a href="./pages/sobrenosotros.html"></a>
               <img class="size-fc animation-networks" src="../images/logo-facebook.jpg" alt="logo-facebook" />
             </div>
           </a>
-          <a href="https://www.instagram.com/jazba.peluqueria/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/jazba.peluqueria/" target="_blank" rel="noopener noreferrer"
+            data-url="https://www.instagram.com/jazba.peluqueria/" data-delay="0.5" class="delay">
             <div>
               <img class="size-ig animation-networks" src="../images/logo-instagram.jpg" alt="logo-instagram" />
             </div>
           </a>
-          <a href="https://www.tiktok.com/@jazbapeluqueria" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.tiktok.com/@jazbapeluqueria" target="_blank" rel="noopener noreferrer"
+            data-url="https://www.tiktok.com/@jazbapeluqueria" data-delay="0.5" class="delay">
             <div>
               <img class="size-tk animation-networks" src="../images/logo-tiktok.jpg" alt="logo-tiktok" />
             </div>
