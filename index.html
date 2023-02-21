@@ -21,15 +21,22 @@
 
   <!--Retraso de los botones que redefinen a otras paginas-->
   <script>
-    const enlaces = document.querySelectorAll('.delay');
-    enlaces.forEach(enlace => {
-      enlace.addEventListener('click', function (event) {
-        event.preventDefault();
-        const url = this.getAttribute('data-url');
-        const delay = this.getAttribute('data-delay') * 1000;
-        setTimeout(function () {
-          window.location.href = url;
-        }, delay);
+    document.addEventListener("DOMContentLoaded", function (event) {
+      const enlaces = document.querySelectorAll('.delay');
+      enlaces.forEach(enlace => {
+        enlace.addEventListener('click', function (event) {
+          event.preventDefault();
+          const url = this.getAttribute('data-url');
+          const delay = this.getAttribute('data-delay') * 1000;
+          const target = this.getAttribute('target');
+          setTimeout(function () {
+            if (target === '_blank') {
+              window.open(url, target);
+            } else {
+              window.location.href = url;
+            }
+          }, delay);
+        });
       });
     });
   </script>
@@ -67,7 +74,7 @@
             <div class="position-main">
               <div class="flex-row">
                 <div>
-                  <a href="./pages/sobrenosotros.html" data-url="./pages/sobrenosotros.html" data-delay="3"
+                  <a href="./pages/sobrenosotros.html" data-url="./pages/sobrenosotros.html" data-delay="0.5"
                     class="delay"><img class="animation-logo size-logo border-logo position-logo"
                       src="./images/logo.jpg" alt="logo"></a>
                 </div>
@@ -134,13 +141,14 @@
         <br />
         <div class="flex-center flex-row">
           <a href="https://www.facebook.com/people/Jazba-Peluqueria/100063650915111/" target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer" data-url="https://www.facebook.com/people/Jazba-Peluqueria/100063650915111/"
+            data-delay="0.5" class="delay">
             <div>
-              <a href="./pages/sobrenosotros.html"></a>
               <img class="size-fc animation-networks" src="./images/logo-facebook.jpg" alt="logo-facebook" />
             </div>
           </a>
-          <a href="https://www.instagram.com/jazba.peluqueria/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/jazba.peluqueria/" target="_blank" rel="noopener noreferrer"
+            data-url="https://www.instagram.com/jazba.peluqueria/" data-delay="0.5" class="delay">
             <div>
               <img class="size-ig animation-networks" src="./images/logo-instagram.jpg" alt="logo-instagram" />
             </div>
