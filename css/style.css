@@ -423,7 +423,7 @@ strong {
   .size-txt-4 {
     font-size: 30px; }
   .size-txt-5 {
-    font-size: 70px; }
+    font-size: 60px; }
   .size-txt-6 {
     font-size: 20px; }
   /*card ventas size*/
@@ -444,11 +444,11 @@ strong {
     .position-main .position-subtitle {
       position: absolute;
       top: 4.4rem;
-      left: 7rem; }
+      left: 8rem; }
     .position-main .position-logo {
       position: absolute;
-      top: 1rem;
-      left: 1rem; }
+      top: 0.6rem;
+      left: 0.4rem; }
     .position-main .position-p {
       position: absolute;
       top: 10rem;
