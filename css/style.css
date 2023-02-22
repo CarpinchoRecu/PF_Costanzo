@@ -3,6 +3,10 @@
   margin: 0;
   box-sizing: border-box; }
 
+/*No ver esta etiqueta*/
+.display-none {
+  display: none; }
+
 /*Tipos de Radius*/
 .border-logo {
   border-radius: 50% !important;
@@ -417,9 +421,9 @@ strong {
   .size-txt-1 {
     font-size: 20px; }
   .size-txt-2 {
-    font-size: 20px; }
+    font-size: 15px; }
   .size-txt-3 {
-    font-size: 25px; }
+    font-size: 20px; }
   .size-txt-4 {
     font-size: 30px; }
   .size-txt-5 {
@@ -460,4 +464,6 @@ strong {
     .container-main .box-animated:hover .box-img {
       transform: translate(-1.3rem, -1.3rem); }
     .container-main .box-animated:hover .box-txt {
-      transform: translate(-1.8rem, -2.8rem); } }
+      transform: translate(-1.8rem, -2.8rem); }
+  .display-none {
+    display: block; } }

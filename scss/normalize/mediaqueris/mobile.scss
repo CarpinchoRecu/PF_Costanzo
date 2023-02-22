@@ -43,8 +43,8 @@
     /*sizes textos*/
 
     $size-txt-1: 20px;
-    $size-txt-2: 20px;
-    $size-txt-3: 25px;
+    $size-txt-2: 15px;
+    $size-txt-3: 20px;
     $size-txt-4: 30px;
     $size-txt-5: 60px;
     $size-txt-6: 20px;
@@ -138,4 +138,9 @@
             }
         }
     }
+
+    .display-none{
+        display: block;
+    }
+
 }
